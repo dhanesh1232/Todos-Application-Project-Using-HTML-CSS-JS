@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+#inputId{
+    color:antiquewhite;
+}
+#headList{
+    color:antiquewhite;
+}
+body{
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    min-height:100vh;
+    background-image: radial-gradient(gray,black);
+}
+.todo-head{
+    font-size: 36px;
+    color:antiquewhite;
+    text-align: center;
+}
+.h2{
+    color: aqua;
+    font-size:35;
+}
+.container{
+    width:40%;
+    margin:auto;
+    border: 2px solid rgb(0, 255, 234);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding-top:3px;
+}
+.inputArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90%;
+    margin-right: 10px;
+}
+.input{
+    border: 2px solid rgb(0, 255, 234);
+    border-radius: 3px;
+    background-color: transparent;
+    height:2rem;
+    width:100%;
+    font-size:16px;
+    margin-top:2px;
+    padding:5px;
+    color:rgb(0, 255, 234);
+}
+input:after{
+    color:yellowgreen;
+}
+input:hover{
+    border: 2px solid lime;
+    background-color: transparent;
+    caret-color: blue;
+}
+.input:active{
+    background-color: transparent;
+    border: 0px transparent solid;
+    caret-color: blue;
+}
+.button-container{
+    width:90%;
+    margin:1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-1{
+    height:2.4rem;
+    width:8rem;
+    background-color:#0077ff;
+    font-size: 1rem;
+    font-weight: 500;
+    color:#ffffff;
+    border:0px solid transparent;
+    border-radius: 3px;
+}
+.btn-2{
+    height:2.4rem;
+    width:8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color:#ffffff;
+    border:0px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(142, 131, 131);
+}
+button:hover{
+    cursor:pointer;
+    background-color: transparent;
+    border:2px solid rgb(7, 255, 238);
+    color:rgb(7, 255, 238);
+}
+button:active{
+    background-color: transparent;
+    border:2px solid rgb(7, 255, 238);
+    color:rgb(7, 255, 238);
+}
+.head{
+    margin-top:5px;
+}
+.task-list{
+    width:50%;
+    margin: auto;
+    margin-top:20px;
+    border:0px solid;
+    border-radius: 6px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    border: 2px solid rgb(0, 255, 234);
+    background-color: transparent;
+}
+.todosList{
+    list-style-type: none;
+    padding:15px;
+}
+/* JavaScript Funtion running area*/
+.list-items{
+    display: flex;
+    margin-top:10px;
+    align-items: center;
+}
+.check-input{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+.label-input{
+    width: 100%;
+    border-style: solid;
+    border-left-width: 6px;
+    border-right-width:2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    display: flex;
+}
+.checked {
+    text-decoration: line-through;
+}
+.check-label{
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  width: 82%;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+/* Add Delete Section*/
+.delete-con{
+    text-align: right;
+    width:20%;
+}
+.delete-icon{
+    padding:12px;
+}
+i:hover{ 
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
